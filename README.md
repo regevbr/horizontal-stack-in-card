@@ -1,12 +1,11 @@
-# Vertical Stack In Card
+# Horizontal Stack In Card
 
-![Version](https://img.shields.io/github/v/release/ofekashery/vertical-stack-in-card)
-![Downloads](https://img.shields.io/github/downloads/ofekashery/vertical-stack-in-card/total)
-![Version](https://img.shields.io/github/v/release/ofekashery/vertical-stack-in-card)
-![Stars](https://img.shields.io/github/stars/ofekashery/vertical-stack-in-card)
-![Discord](https://img.shields.io/discord/330944238910963714)
+![Version](https://img.shields.io/github/v/release/regevbr/horizontal-stack-in-card)
+![Downloads](https://img.shields.io/github/downloads/regevbr/horizontal-stack-in-card/total)
+![Version](https://img.shields.io/github/v/release/regevbr/horizontal-stack-in-card)
+![Stars](https://img.shields.io/github/stars/regevbr/horizontal-stack-in-card)
 
-Vertical Stack In Card allows you to group multiple cards in one card.
+Horizontal Stack In Card allows you to group multiple cards in one card.
 
 #### Please ⭐️ this repo if you find it useful
 
@@ -16,7 +15,7 @@ Vertical Stack In Card allows you to group multiple cards in one card.
 
 | Name       | Type    | Default      | Description                               |
 | ---------- | ------- | ------------ | ----------------------------------------- |
-| type       | string  | **Required** | `custom:vertical-stack-in-card`           |
+| type       | string  | **Required** | `custom:horizontal-stack-in-card`           |
 | cards      | list    | **Required** | List of cards                             |
 | title      | string  | **Optional** | Card title                                |
 | horizontal | boolean | **Optional** | Default: `false`                          |
@@ -24,20 +23,20 @@ Vertical Stack In Card allows you to group multiple cards in one card.
 
 ## Installation
 
-1. Install the `vertical-stack-in-card` card by copying `vertical-stack-in-card.js` to `<config directory>/www/vertical-stack-in-card.js`
+1. Install the `horizontal-stack-in-card` card by copying `horizontal-stack-in-card.js` to `<config directory>/www/horizontal-stack-in-card.js`
 
 Bash:
 
 ```bash
-wget https://raw.githubusercontent.com/ofekashery/vertical-stack-in-card/master/vertical-stack-in-card.js
-mv vertical-stack-in-card.js /config/www/
+wget https://raw.githubusercontent.com/regevbr/horizontal-stack-in-card/master/horizontal-stack-in-card.js
+mv horizontal-stack-in-card.js /config/www/
 ```
 
-2. Link `vertical-stack-in-card` inside your `ui-lovelace.yaml`
+2. Link `horizontal-stack-in-card` inside your `ui-lovelace.yaml`
 
 ```yaml
 resources:
-  - url: /local/vertical-stack-in-card.js?v=0.4.1
+  - url: /local/horizontal-stack-in-card.js?v=0.4.1
     type: js
 ```
 
@@ -46,7 +45,7 @@ resources:
 **Example**
 
 ```yaml
-type: 'custom:vertical-stack-in-card'
+type: 'custom:horizontal-stack-in-card'
 title: My Card
 cards:
   - type: glance
@@ -64,6 +63,7 @@ cards:
 
 ## Credits
 
+- [regevbr](https://github.com/regevbr)
 - [ofekashery](https://github.com/ofekashery)
 - [ciotlosm](https://github.com/ciotlosm)
 - [thomasloven](https://github.com/thomasloven)

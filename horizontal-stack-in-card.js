@@ -1,6 +1,6 @@
-console.log(`%cvertical-stack-in-card\n%cVersion: ${'0.4.1'}`, 'color: #1976d2; font-weight: bold;', '');
+console.log(`%chorizontal-stack-in-card\n%cVersion: ${'0.4.1'}`, 'color: #1976d2; font-weight: bold;', '');
 
-class VerticalStackInCard extends HTMLElement {
+class HorizontalStackInCard extends HTMLElement {
   constructor() {
     super();
   }
@@ -178,4 +178,4 @@ class VerticalStackInCard extends HTMLElement {
   }
 }
 
-customElements.define('vertical-stack-in-card', VerticalStackInCard);
+customElements.define('horizontal-stack-in-card', HorizontalStackInCard);
