@@ -51,7 +51,7 @@ class HorizontalStackInCard extends HTMLElement {
     const shadowRoot = this.shadowRoot || this.attachShadow({mode: 'open'});
 
     while (shadowRoot.hasChildNodes()) {
-      shadowRoot.removeChild(this.lastChild);
+      shadowRoot.removeChild(shadowRoot.lastChild);
     }
     shadowRoot.appendChild(card);
 
