@@ -40,7 +40,7 @@ class HorizontalStackInCard extends HTMLElement {
     card.header = config.title;
     card.style.overflow = 'hidden';
     this._refCards.forEach((card) => cardContent.appendChild(card));
-    if (config.horizontal) {
+    if (!config.vertical) {
       cardContent.style.display = 'flex';
       cardContent.childNodes.forEach((card) => {
         card.style.flex = '1 1 0';
@@ -48,10 +48,12 @@ class HorizontalStackInCard extends HTMLElement {
       });
     }
     card.appendChild(cardContent);
-    while (this.hasChildNodes()) {
-      this.removeChild(this.lastChild);
+    const shadowRoot = this.shadowRoot || this.attachShadow({mode: 'open'});
+
+    while (shadowRoot.hasChildNodes()) {
+      shadowRoot.removeChild(this.lastChild);
     }
-    this.appendChild(card);
+    shadowRoot.appendChild(card);
 
     // Calculate card size
     this._cardSize.resolve();

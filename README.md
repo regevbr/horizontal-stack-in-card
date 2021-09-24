@@ -18,7 +18,7 @@ Horizontal Stack In Card allows you to group multiple cards in one card.
 | type       | string  | **Required** | `custom:horizontal-stack-in-card`           |
 | cards      | list    | **Required** | List of cards                             |
 | title      | string  | **Optional** | Card title                                |
-| horizontal | boolean | **Optional** | Default: `false`                          |
+| vertical | boolean | **Optional** | Default: `false`                          |
 | styles     | object  | **Optional** | Adds custom CSS directives to child cards |
 
 ## Installation
